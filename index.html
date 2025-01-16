@@ -6,11 +6,14 @@
     <meta name="description" content="Created for the WDD 131 class 'Dynamic Web Fundamentals' by Precious Ukpebitere. Demonstrates profieciency in basic HTML, CSS, and JavaScript.">
     <meta name="author" content="Precious Ukpebitere">
     <link rel="stylesheet" href="styles/base.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Playwrite+AU+SA:wght@100..400&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AU+SA:wght@100..400&display=swap"
         rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+
     <title>WDD 131- Dynamic Web Fundamentals - Precious Ukpebitere</title>
 </head>
 <body>
@@ -21,7 +24,7 @@
         <nav class="head_links">
             <ul>
                 <li>
-                    <a href="linkedIn.com">linkedIn</a>
+                    <a href="https://www.linkedin.com/in/precious-ukpebitere/">linkedIn</a>
                 </li>
                 <li>
                     <a href="https://byupw.instructure.com/">Canvas</a>
@@ -36,19 +39,23 @@
         </nav>
     </header>
     <main>
-        <section class="card">
+        <section class="card" id="about">
             <h2>About me</h2>
             <div class="about_me">
-                <img src="" alt="my profile">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cumque dolor in minima reiciendis ullam, enim assumenda at neque asperiores. Tempore illo blanditiis libero repellat, expedita ex totam dolorum accusantium voluptatem, tenetur omnis optio modi adipisci non ipsum soluta nihil accusamus commodi cum earum eius dolor placeat deleniti et. Dolores.</p>
+                <img src="images/Profile pic.jpg" alt="my profile" width="250px" class="profile">
+                <p>I am a dedicated and passionate developer with a knack for crafting innovative solutions and exploring new technologies.
+                As a single individual, I balance my professional ambitions with my love for music, outdoor adventures, and cherishing
+                quality time with family. This blend of technical expertise, creativity, and a zest for life truly defines who I am.</p>
 
                 <h3>Nigeria</h3>
-                <img src="" alt="Nigeria">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit animi dolor hic magnam natus assumenda est aliquid labore autem rem recusandae dolore distinctio vero nisi in placeat, modi quasi eius alias, soluta ipsum quia neque quo aut. Numquam illo quis, expedita natus ducimus voluptates distinctio consequatur, mollitia similique adipisci officiis?</p>
+                <img src="images/Nigeria Culture. 1jpg.jpg" alt="Nigeria" width="200px" class="country">
+                <p>Nigeria's culture is a vibrant blend of over 250 ethnic groups, celebrated through diverse languages, music, fashion,
+                and festivals. From Afrobeat to colorful traditions like the Durbar, its art and storytelling reflect deep heritage and
+                creativity, showcasing the nation's rich and dynamic identity.</p>
 
             </div>
         </section>
-        <section class="card">
+        <section class="card" id="resources">
             <h2>Web Dev Recourses</h2>
             <div class="resources">
                 <ul>
@@ -76,14 +83,10 @@
     </main>
     <footer>
         <p>
-            '@'
-            <span id="currentyear">2025</span>
-            "Precious Ukpebitere | Detal, Nigeria"
+            &copy; <span id="currentyear"></span> Precious Ukpebitere | Delta, Nigeria
         </p>
-        <p id="lastModified">
-            Last edited: 1/15/2025
-
-        </p>
+        <p id="lastModified"></p>
     </footer>
+
 </body>
 </html>

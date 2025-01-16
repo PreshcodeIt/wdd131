@@ -1,0 +1,170 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #004999;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+header .title h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;
+}
+
+header .head_links ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+header .head_links a {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+header .head_links a:hover {
+    background-color: #00bcd4;
+    color: #333;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    
+}
+
+/* Cards */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    margin: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 3rem;
+}
+
+section{
+    display: block;
+    unicode-bidi: isolate;
+}
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #00bcd4;
+    display: inline-block;
+}
+
+.card p,
+.card ul {
+    margin: 1rem 0;
+}
+
+.card ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+.card p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-family: "Playwrite AU SA";
+    
+}
+
+.about_me img,
+.resources img {
+    float: left;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+img.profile{
+    float: right;
+    margin-right: 1rem;
+}
+
+img.country{
+    float: left;
+    margin-right: 1rem;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+p{
+    font-family: "Playwrite AU SA";
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .head_links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .title h1 {
+        font-size: 1.5rem;
+    }
+}
