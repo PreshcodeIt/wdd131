@@ -6,8 +6,12 @@
     <meta name="description" content="this page contain info about my country Nigeria, to test the responsiveness on small, medium and large screen">
     <meta name="author" content="Precious Ukpebitere">
     <title>Country page</title>
-    <link rel="stylesheet" href="place.css">
-    <script src="place.js" defer></script>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
 </head>
 <body>
     <header>
@@ -15,13 +19,16 @@
     </header>
 
     <main>
-        <section class="hero">
-            <picture>
-                <source srcset="images/Nigeria-large.webp" media="(min-width: 1000px)">
-                <source srcset="images/Nigeria-medium.webp" media="(min-width: 500px)">
-                <img src="images/Nigeria-small.webp" alt="Nigeria Culture" width="500px" height="250px">
-            </picture>
-        </section>
+        
+            <div class="hero"> 
+
+                <picture>
+                    <source srcset="images/Nigeria-large.webp" media="(min-width: 1000px)">
+                    <source srcset="images/Nigeria-medium.webp" media="(min-width: 500px)">
+                    <img src="images/Nigeria-small.webp" alt="Nigeria Culture" width="500" height="250">
+                </picture>
+            </div>
+        
 
         <section class="data">
             <h2>Data</h2>
