@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+h1,h2 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#hamburger {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li button{
+    margin: 0 10px;
+    text-decoration: none;
+        color:#fff;
+        font-weight: bold;
+        font-size: 1rem;
+        list-style: none;
+        border: none;
+        background-color: #333;
+        /* background:none; */
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        
+}
+
+nav li button:hover {
+    color: #007bff;
+    transform: 0.5s;
+}
+
+nav li button:active{
+    background:#007bff;
+    
+}
+
+
+#temple-container {
+    justify-content: center;
+    display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
+}
+
+.temple-card {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    lazyload: true;
+        box-shadow:  6px 4px 6px  rgba(0, 0, 0, 0.3);
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    /* Scale up */
+    100% {
+        transform: scale(1);
+    }
+
+    /* Back to normal */
+}
+
+/* Apply the bounce animation on click */
+.temple-card:hover {
+    animation: bounce 0.3s ease-in-out;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Menu */
+@media (min-width:320px)and (max-width: 600px) {
+    #hamburger {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        transition: o.3s;
+        height: 50vh;
+        color: white;
+    }
+
+    nav.show {
+        left: 0;
+    }
+
+    .show a {
+        display: flex;
+        color: white;
+
+    }
+
+    nav ul {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+
+    }
+
+    nav ul li {
+        padding: 24px;
+    }
+
+
+}

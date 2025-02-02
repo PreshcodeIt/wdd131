@@ -1,0 +1,18 @@
+/* Larger screen styles */
+#temple-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul.show {
+    display: flex !important;
+}

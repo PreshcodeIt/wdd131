@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Precious Ukpebitere">
+    <meta name="description" content="a page about responsive temple images on different screen size">
+    <title>Filtered Temple Album</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filteres-temples-large.css">
+    <!-- JavaScript File -->
+    <script src="scripts/filtered-temples.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+        <nav>
+            <ul>
+                <li><button onclick="filterTemples('home')">Home</button></li>
+                <li><button onclick="filterTemples('old')">Old</button></li>
+                <li><button onclick="filterTemples('new')">New</button></li>
+                <li><button onclick="filterTemples('large')">Large</button></li>
+                <li><button onclick="filterTemples('small')">Small</button></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <h2>Temples</h2>
+    <main id="temple-container">
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Precious Ukpebitere Temple Album</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
