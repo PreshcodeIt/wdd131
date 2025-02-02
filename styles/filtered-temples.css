@@ -54,7 +54,6 @@ nav li button{
 
 nav li button:hover {
     color: #007bff;
-    transform: 0.5s;
 }
 
 nav li button:active{
@@ -84,8 +83,8 @@ nav li button:active{
     width: 100%;
     height: auto;
     border-radius: 8px;
-    lazyload: true;
-        box-shadow:  6px 4px 6px  rgba(0, 0, 0, 0.3);
+    lazyload:true;
+    box-shadow:  6px 4px 6px  rgba(0, 0, 0, 0.3);
 }
 
 @keyframes bounce {
@@ -146,8 +145,8 @@ footer p {
         left: 0;
     }
 
-    .show a {
-        display: flex;
+    .show li {
+        /* display: flex; */
         color: white;
 
     }

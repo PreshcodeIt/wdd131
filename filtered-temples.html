@@ -8,7 +8,10 @@
     <meta name="description" content="a page about responsive temple images on different screen size">
     <title>Filtered Temple Album</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="styles/filtered-temples.css">
@@ -24,17 +27,18 @@
         <button id="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
         <nav>
             <ul>
-                <li><button onclick="filterTemples('home')">Home</button></li>
-                <li><button onclick="filterTemples('old')">Old</button></li>
-                <li><button onclick="filterTemples('new')">New</button></li>
-                <li><button onclick="filterTemples('large')">Large</button></li>
-                <li><button onclick="filterTemples('small')">Small</button></li>
+                <li><a><button onclick="filterTemples('home')">Home</button></a></li>
+                <li><a><button onclick="filterTemples('old')">Old</button></a></li>
+                <li><a><button onclick="filterTemples('new')">New</button></a></li>
+                <li><a><button onclick="filterTemples('large')">Large</button></a></li>
+                <li><a><button onclick="filterTemples('small')">Small</button></a></li>
             </ul>
             
         </nav>
     </header>
-    <h2>Temples</h2>
     <main id="temple-container">
+        
+        <h2>Temples</h2>
         
     </main>
     <footer>
