@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A basic html review page to confirm submission of the users input from the form.html page">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+    <main>
+        <p>Your review has been submitted successfully.</p>
+        <p id="review-count"></p>
+        <a href="form.html">Submit Another Review</a>
+    </main>
+    <footer>
+        <p>&copy; 2025 Product Reviews</p>
+    </footer>
+    <script>
+        // Display review count from localStorage
+        document.addEventListener("DOMContentLoaded", () => {
+            let reviewCount = localStorage.getItem("reviewCount") || 0;
+            document.getElementById("review-count").textContent = `You have submitted ${reviewCount} review(s).`;
+        });
+    </script>
+</body>
+
+</html>
