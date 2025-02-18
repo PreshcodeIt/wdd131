@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Precious Ukpebitere" >
+    <meta name="description" content="The website will showcase high-quality wigs, hairstyling services, and booking
+            options, of a hair salon">
+    <title>Hair by Pretty Rukky</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/final_project.css">
+    <script rel="stylesheet"  src="scripts/final_project.js" defer></script>
+    
+
+</head>
+
+<body>
+    <header>
+        <h1>Hair by Pretty Rukky</h1>
+        <img src="images/images.webp" loading="lazy" alt="Pretty Rukky Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Welcome to Hair by Pretty Rukky</h2>
+        <p>We provide the best hairstyling services and high-quality wigs.</p>
+        <img src="images/salon.webp" loading="lazy" alt="Salon interior">
+        <button id="bookAppointment">Book an Appointment</button>
+
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Wig sales</li>
+            <li>Hair Styling</li>
+            <li>Hair Treatments</li>
+            <li>Braiding & Weaving</li>
+        </ul>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h2>Our Works</h2>
+        <img src="images/hairone.webp" loading="lazy" alt="Styled Hair 1">
+        <img src="images/hairtwo.webp" loading="lazy" alt="Styled Hair 2">
+        <img src="images/treat 2.webp" loading="lazy" alt="Styled Hair 3">
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="confirmationMessage" class="hidden">Thank you! Your message has been sent.</p>
+    </section>
+
+
+    
+
+    <footer>
+        <p>&copy; 2025 Hair by Pretty Rukky. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
