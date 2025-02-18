@@ -37,3 +37,20 @@ document.getElementById("bookAppointment").addEventListener("click", function() 
     window.location.href = "contact.html";
 });
 
+// Object and array demonstration
+const services = [
+    { name: "Wig Sales"},
+    { name: "Hair Styling"},
+    { name: "Hair Treatments"},
+    { name: "Braiding & Weaving"}
+];
+
+const servicesContainer = document.querySelector(".services ul");
+services.forEach(service => {
+    let li = document.createElement("li");
+    li.textContent = `${service.name}`;
+    servicesContainer.appendChild(li);
+});
+
+
+
